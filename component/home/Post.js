@@ -7,16 +7,25 @@ const Post = ({post}) => {
     <View style={{marginBottom:30}}>
         <Divider width={1} orientation='vertical'/>
         <PostHeader post={post} />
+        <PostImage post={post} />
     </View>
   )
 }
 
 const PostHeader = ({post}) => (
     <View style={{flexDirection:'row',justifyContent:'space-between',margin:5,alignItems:'center',}}>
-        <View>
+        <View style={{flexDirection:'row', alignItems:'center'}}>
             <Image source={{uri: post.profile_picture}} style={styles.story}/>
-            <Text></Text>
+            <Text style={{color: 'black',marginLeft:5,fontWeight:'700'}}>Hello {post.user}</Text>
         </View>
+        
+        <Text style={{color:'black', fontWeight:'900'}}>...</Text>
+    </View>
+)
+
+const PostImage = ({post}) => (
+    <View style={{width:'100%', height:200,}}>
+        <Image source={{uri: post.imageUrl}} style={{height:'100%',resizeMode:'cover'}}/>
     </View>
 )
 
