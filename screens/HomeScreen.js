@@ -4,7 +4,6 @@ import Header from '../component/home/Header'
 import Stories from '../component/home/Stories'
 import Post from '../component/home/Post'
 import {POSTS} from '../data/post'
-import BottomTabs ,{ bottomTabIcons } from '../component/home/BottomTabs'
 
 const HomeScreen = () => {
   return (
@@ -16,14 +15,13 @@ const HomeScreen = () => {
             <Post post={post} key={index}/>
         ))}
       </ScrollView>
-      <BottomTabs icons={bottomTabIcons} />
     </View>
   )
 }
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor:'white',
+        backgroundColor:'black',
         flex:1,
         margin:10,
     }

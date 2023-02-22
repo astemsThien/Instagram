@@ -43,10 +43,10 @@ const PostHeader = ({post}) => (
     <View style={{flexDirection:'row',justifyContent:'space-between',margin:5,alignItems:'center',}}>
         <View style={{flexDirection:'row', alignItems:'center'}}>
             <Image source={{uri: post.profile_picture}} style={styles.story}/>
-            <Text style={{color: 'black',marginLeft:5,fontWeight:'700'}}>{post.user}</Text>
+            <Text style={{color: 'white',marginLeft:5,fontWeight:'700'}}>{post.user}</Text>
         </View>
         
-        <Text style={{color:'black', fontWeight:'900'}}>...</Text>
+        <Text style={{color:'white', fontWeight:'900'}}>...</Text>
     </View>
 )
 
@@ -78,13 +78,13 @@ const Icon = ({imgStyle, imgUrl}) => (
 
 const Likes = ({post}) => (
     <View style={{flexDirection:'row',marginTop:4}}>
-        <Text style={{color:'black', fontWeight:'600'}}>{post.likes.toLocaleString('en')} likes</Text>
+        <Text style={{color:'white', fontWeight:'600'}}>{post.likes.toLocaleString('en')} likes</Text>
     </View>
 )
 
 const Caption = ({post}) => (
     <View style={{marginTop:5}}>
-        <Text style={{color:'black',}}>
+        <Text style={{color:'white',}}>
             <Text style={{fontWeight:'600',}}>{post.user}</Text>
             <Text> {post.caption}</Text>
         </Text>
@@ -109,7 +109,7 @@ const Comments = ({post}) => (
     <>
     {post.comments.map((comment, index) => (
         <View key={index} style={{flexDirection:'row', marginTop:2}}>
-            <Text style={{color:'black'}}>
+            <Text style={{color:'white'}}>
                 <Text style={{fontWeight:'600'}}>{comment.user}</Text>{' '}
                 {comment.comment}
             </Text>

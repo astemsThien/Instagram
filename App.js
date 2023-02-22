@@ -3,7 +3,9 @@ import HomeScreen from './screens/HomeScreen';
 
 export default function App() {
   return (
-    <HomeScreen />
+    <View style={{backgroundColor:'black',flex:1}}>
+      <HomeScreen />
+    </View>
   );
 }
 

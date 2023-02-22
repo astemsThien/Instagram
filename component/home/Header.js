@@ -5,21 +5,21 @@ const Header = () => {
   return (
     <View style={styles.container}>
         <TouchableOpacity>
-            <Image style={styles.logo} source={require('../../assets/ig-logo.png')} />
+            <Image style={styles.logo} source={require('../../assets/logo.png')} />
         </TouchableOpacity>
 
         <View style={styles.iconContainer}>
             <TouchableOpacity>
-                <Image style={styles.icon} source={{uri:'https://img.icons8.com/material-outlined/256/plus-2-math.png'}} />
+                <Image style={styles.icon} source={{uri: 'https://img.icons8.com/fluency-systems-regular/60/ffffff/plus-2-math.png'}}/>
             </TouchableOpacity>
             <TouchableOpacity>
-                <Image style={styles.icon} source={{uri:'https://img.icons8.com/ios-glyphs/256/hearts.png'}} />
+                <Image style={styles.icon} source={{uri: 'https://img.icons8.com/fluency-systems-regular/60/ffffff/like--v1.png'}}/>
             </TouchableOpacity>
             <TouchableOpacity>
                 <View style={styles.unreadBadge}>
                     <Text style={styles.unreadBadgeText}>15</Text>
                 </View>
-                <Image style={styles.icon} source={{uri:'https://img.icons8.com/ios/256/facebook-messenger.png'}} />
+                <Image style={styles.icon} source={{uri: 'https://img.icons8.com/fluency-systems-regular/60/ffffff/facebook-messenger.png'}}/>
             </TouchableOpacity>
         </View>
     </View>
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         justifyContent:'space-between',
         alignItems:'center',
         flexDirection:'row',
-        // marginHorizontal:10,
+        marginHorizontal:10,
         marginTop:30,
     },
 
